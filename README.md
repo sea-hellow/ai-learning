@@ -7,7 +7,7 @@ AI 学习路线（阶段 0–5）的代码、笔记与实践记录。
 | 阶段 | 内容 | 周次 | 状态 |
 |---|---|---|---|
 | 0 | 工具与环境 | 周 1–2 | ✅ 已完成 |
-| 1 | Python 编程基础 | 周 3–12 | ⏳ 即将开始 |
+| 1 | Python 编程基础 | 周 3–12 | 🔄 进行中（第 3 周完成） |
 | 2 | 数学基础（并行轨道） | 周 9–24 | 未开始 |
 | 3 | 机器学习 | 周 13–22 | 未开始 |
 | 4 | 深度学习 | 周 23–32 | 未开始 |
@@ -29,7 +29,12 @@ ai-learning/
 ├── .gitignore
 ├── docs/
 │   └── 环境备忘.md       # 环境配置、镜像源、代理等运维记录
-└── week1_test.ipynb      # 阶段 0 环境验证
+├── week1_test.ipynb      # 阶段 0 环境验证
+└── week3/                # 第 3 周：Python 基础语法
+    ├── hello.py          # 第一个程序
+    ├── task1_me.py       # 练习 1：自我介绍卡（变量 + f-string）
+    ├── task2_text.py     # 练习 2：字符串方法
+    └── task3_time.py     # 练习 3：时间换算（// 与 %）
 ```
 
 ## 每周工作流程
@@ -46,6 +51,22 @@ git push                           # 推送到 GitHub
 ```
 
 ## 学习日志
+
+### 第 3 周（2026-10-08）
+
+- 环境与目录对不上导致首次运行失败：在 `C:\Users\21618` 且处于 `(base)` 环境跑 `python hello.py`
+- 学会用 `conda activate ai-learn` 切换环境、`cd /d` 切换目录
+- 跑通第一个程序 `hello.py`（print / 字符串 / 数字运算）
+- 掌握：变量赋值、f-string 格式化、字符串方法（`strip`/`upper`/`lower`/`len`）、整除 `//`、取余 `%`
+- 完成三个练习，全部通过：
+  - `task1_me.py` —— 用 4 个变量 + f-string 输出自我介绍
+  - `task2_text.py` —— 对字符串做去空白、大小写转换、长度统计
+  - `task3_time.py` —— 用 `//` 和 `%` 把 10000 秒换算成 2 小时 46 分 40 秒
+
+**踩到的坑**：
+- 中文标点（`“”` `（）` `，`）在代码里会导致 `SyntaxError`，输入法要保持在英文状态
+- `LF will be replaced by CRLF` 是提示不是错误，Windows 下正常现象
+- PowerShell 与 CMD 语法不同：切目录 PowerShell 用 `cd D:\path`，CMD 用 `cd /d D:\path`
 
 ### 第 2 周（2026-10-07）
 
