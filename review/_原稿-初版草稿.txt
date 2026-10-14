@@ -1,0 +1,68 @@
+seconds=98765
+day=seconds//86400
+rest=seconds%86400
+hour=rest//3600
+rest=rest%3600
+minute=rest//60
+rest=rest%60
+second=rest%60
+print(f"{seconds}秒 = {day}天{hour}小时{minute}分钟{second}秒")
+
+
+
+temps = [23, 19, 31, 27, 15]
+all=0
+print(f"{temps})
+print(temps[0])
+print(temps[-1])
+a=len.temps
+print(a)
+print(max(temps))
+print(min(temps))
+b=sum(temps)
+print(b//a)
+temps.attend(28)
+print(f"{temps})
+temps[1]=20
+print(f"{temps})
+
+t=28
+if t>=35
+    print("酷热")
+elif t>=30
+    print("炎热")
+elif t>=20
+    print("舒适")
+elif t>=10    
+    print("酷热")
+else
+    print("寒冷")
+
+
+scores = [72, 95, 58, 88, 91, 64, 47, 83]
+total      = 0
+highest    = scores[0]
+pass_count = 0
+good_count = 0
+for s in scores
+    total=total+s
+    if s>highest
+        highest=s
+    if s>=60
+        pass_count=pass_count+1
+    if s>=90
+        good_count=good_count+1
+print(total)
+print(total/len(scores))
+print(highest)
+print(pass_count)
+print(good_count)
+    
+
+
+
+
+
+
+
+
